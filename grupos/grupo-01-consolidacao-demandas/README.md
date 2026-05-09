@@ -1,8 +1,49 @@
-# Grupo 01 — Atores e Diagrama de Casos de Uso
+# Grupo 01 — Consolidação de Demandas (DFD)
 
-## 🎯 Responsabilidade
+## Módulo do Sistema
 
-Modelar os **atores** do sistema e o **Diagrama de Casos de Uso** completo (UML), cobrindo todas as funcionalidades identificadas no domínio.
+Coleta e consolidação de demandas das secretarias em um Documento de Formalização da Demanda (DFD) único.
+
+## Responsabilidade
+
+- Receber demandas textuais/formulários das secretarias
+- Validar e consolidar itens (eliminar duplicatas, normalizar especificações)
+- Gerar DFD com lista consolidada de itens solicitados
+
+**Entradas:** Formulários/demandas das secretarias (tipo, quantidade, justificativa, secretaria)  
+**Saídas:** DFD com lista consolidada de itens
+
+---
+
+## Entregas Mínimas
+
+| Artefato | Descrição |
+|----------|-----------|
+| Casos de uso (mínimo 4) | Cadastrar demanda, consolidar, validar, gerar DFD |
+| Diagrama UML de classes | `Demanda`, `Secretaria`, `Item`, `DFD` |
+| Diagrama de sequência | Fluxo: coleta → consolidação → geração de DFD |
+| BPMN | Processo com swimlanes por secretaria, prazos de coleta |
+| Backlog | Mínimo 5 histórias de usuário |
+| ADRs (mínimo 2) | Ex.: formato de armazenamento, detecção de duplicatas |
+| Testes | Unitários e de integração (validação de consolidação) |
+| Auditoria | Log de quem criou/modificou cada demanda |
+
+---
+
+## Interfaces com Outros Módulos
+
+- **Saída → G02 (ETP):** DFD consolidado
+
+---
+
+## Entrega do Grupo
+
+> Preencha esta seção ao finalizar:
+
+- **Integrantes:**
+- **Data de entrega:**
+- **Branch/PR:**
+
 
 ---
 

@@ -1,27 +1,53 @@
-# Grupo 09 — Auditoria, Compliance e Indicadores
+# Grupo 09 — Auditoria, Compliance e Indicadores de Negócio
+
+## Módulo do Sistema
+
+Módulo centralizado que registra todos os eventos de todos os módulos (G01–G08), valida conformidade com a Lei 14.133/2021 e gera indicadores de desempenho.
 
 ## Responsabilidade
 
-Modelar o modulo responsavel por trilha de auditoria, conformidade do
-processo e indicadores gerenciais. O foco do grupo e tornar o sistema
-auditavel, rastreavel e mensuravel.
+- Receber eventos de todos os módulos: criação, modificação, envio, recepção, resultado
+- Registrar trilha de auditoria imutável (quem, quando, o quê, resultado)
+- Validar conformidade: todas as operações seguem a Lei 14.133/2021?
+- Calcular indicadores: tempo médio de processamento, taxa de sucesso, variação de preços
+- Gerar alertas: processo travado? Prazo ultrapassado?
 
-## Entregas Minimas
+**Entradas:** Eventos de G01–G08 (logs, mudanças de estado)  
+**Saídas:** Logs de auditoria, relatórios de conformidade, indicadores, alertas
 
-- escopo do modulo e fronteiras com os demais grupos;
-- entidades, eventos e regras de negocio do modulo;
-- definicao dos logs e eventos auditaveis mais importantes;
-- indicadores e alertas relevantes para acompanhamento do processo;
-- casos de teste e evidencias do comportamento esperado.
+---
 
-## Interfaces Esperadas
+## Entregas Mínimas
 
-- recebe eventos de processo, documentos e execucao dos demais modulos;
-- consolida historico de transicoes, justificativas e responsaveis;
-- produz relatorios de conformidade, alertas e paineis de acompanhamento.
+| Artefato | Descrição |
+|----------|-----------|
+| Casos de uso (mínimo 4) | Registrar evento, gerar relatório de conformidade, calcular indicadores, enviar alertas |
+| Diagrama UML de classes | `EventoAuditoria`, `LogOperacao`, `ConformidadeItem`, `Indicador`, `Alerta` |
+| Diagrama de sequência | Integração com todos os módulos |
+| BPMN | Fluxo de auditoria contínua, geração periódica de relatórios |
+| Backlog | Mínimo 5 histórias de usuário |
+| ADRs (mínimo 2) | Ex.: Event Sourcing? Qual banco para logs imutáveis? |
+| Testes | Integridade de logs, cálculo correto de indicadores |
+| Auditoria | Meta-auditoria: quem acessou os logs de auditoria |
 
-## Observacao
+---
 
-Nenhum grupo tem como tema principal artefatos para agentes de IA.
-Opcionalmente, este grupo pode incluir um arquivo `.md` de apoio, como
-`contexto-agente.md`, apenas para resumir seu proprio modulo.
+## Interfaces com Outros Módulos
+
+- **Entrada ← G01 a G08:** Eventos de todos os módulos
+
+---
+
+## Observação
+
+Este grupo pode opcionalmente incluir um arquivo `contexto-agente.md` apenas para resumir seu próprio módulo. Nenhum grupo tem como tema principal artefatos para agentes de IA.
+
+---
+
+## Entrega do Grupo
+
+> Preencha esta seção ao finalizar:
+
+- **Integrantes:**
+- **Data de entrega:**
+- **Branch/PR:**

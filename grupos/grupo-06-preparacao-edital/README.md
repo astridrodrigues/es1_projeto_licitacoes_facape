@@ -1,8 +1,53 @@
-# Grupo 06 — Backlog de Produto (Épicos, User Stories e Critérios de Aceite)
+# Grupo 06 — Preparação para Edital e Envio à Prefeitura
 
-## 🎯 Responsabilidade
+## Módulo do Sistema
 
-Elaborar o **backlog de produto** completo do sistema, organizado em **épicos** e **user stories**, com **critérios de aceite** escritos no formato Given/When/Then (Gherkin), refletindo as regras de negócio do domínio de licitações.
+Formatação do TR e Mapa de Risco em documento oficial (edital) e envio para a Prefeitura conduzir o pregão eletrônico.
+
+## Responsabilidade
+
+- Receber TR (G04) e Mapa de Risco (G05)
+- Formatar edital em padrão oficial
+- Anexar TR e Mapa de Risco
+- Validar completude do edital
+- Enviar para Prefeitura (que conduzirá o pregão eletrônico)
+- Registrar data/hora/confirmação de envio
+
+**Entradas:** TR (G04), Mapa de Risco (G05)  
+**Saídas:** Edital formatado e enviado para a Prefeitura
+
+---
+
+## Entregas Mínimas
+
+| Artefato | Descrição |
+|----------|-----------|
+| Casos de uso (mínimo 4) | Formatar edital, validar, enviar para Prefeitura, registrar envio |
+| Diagrama UML de classes | `Edital`, `EditalFormatado`, `Anexo`, `TramiteExterno`, `Destinatario` |
+| Diagrama de sequência | Formatação → validação → envio |
+| BPMN | Fluxo de tramitação interna e externa |
+| Backlog | Mínimo 5 histórias de usuário |
+| ADRs (mínimo 2) | Ex.: qual formato oficial? PDF assinado digitalmente? |
+| Testes | Validação de formato, completude de anexos |
+| Auditoria | Quem enviou, quando, qual versão, confirmação de recebimento |
+
+---
+
+## Interfaces com Outros Módulos
+
+- **Entrada ← G04 (TR):** TR
+- **Entrada ← G05 (Mapa de Riscos):** Mapa de Riscos
+- **Saída → G07 (Acompanhamento Externo):** Edital enviado
+
+---
+
+## Entrega do Grupo
+
+> Preencha esta seção ao finalizar:
+
+- **Integrantes:**
+- **Data de entrega:**
+- **Branch/PR:**
 
 ---
 

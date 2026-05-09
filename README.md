@@ -39,15 +39,15 @@ sistema-licitacao-facape/
 │   └── glossario-base.md            ← glossário inicial do domínio (professor)
 │
 └── grupos/
-    ├── grupo-01-casos-de-uso/       ← Atores + Diagrama de Casos de Uso
-    ├── grupo-02-especificacao-uc/   ← Especificação Narrativa de UCs
-    ├── grupo-03-diagrama-classes/   ← Diagrama de Classes do Domínio
-    ├── grupo-04-diagramas-sequencia/← Diagramas de Sequência
-    ├── grupo-05-modelagem-processos/← Modelagem BPMN de Processos
-    ├── grupo-06-backlog/            ← Épicos, User Stories e Critérios de Aceite
-    ├── grupo-07-adrs/               ← Registros de Decisão Arquitetural (ADRs)
-    ├── grupo-08-testes/             ← Plano e Casos de Teste
-    └── grupo-09-auditoria-compliance-bi/ ← Auditoria, Compliance e Indicadores
+    ├── grupo-01-consolidacao-demandas/        ← Consolidação de Demandas (DFD)
+    ├── grupo-02-estudo-tecnico-preliminar/    ← Estudo Técnico Preliminar (ETP)
+    ├── grupo-03-atas-srp/                     ← Pesquisa e Gestão de Atas SRP
+    ├── grupo-04-termo-referencia/             ← Elaboração de Termo de Referência (TR)
+    ├── grupo-05-mapa-riscos/                  ← Mapa de Riscos
+    ├── grupo-06-preparacao-edital/            ← Preparação para Edital e Envio à Prefeitura
+    ├── grupo-07-acompanhamento-externo/       ← Acompanhamento de Processo Externo
+    ├── grupo-08-ordem-fornecimento/           ← Controle de Ordem de Fornecimento (OF)
+    └── grupo-09-auditoria-compliance-bi/      ← Auditoria, Compliance e Indicadores de Negócio
 ```
 
 > ⚠️ **Cada grupo trabalha EXCLUSIVAMENTE dentro da sua pasta.** Qualquer modificação fora dela resultará em reprovação do PR.
@@ -58,15 +58,15 @@ sistema-licitacao-facape/
 
 | Grupo | Pasta | Responsabilidade |
 | ----- | ----- | ---------------- |
-| G01 | `grupo-01-casos-de-uso` | Atores e Diagrama de Casos de Uso |
-| G02 | `grupo-02-especificacao-uc` | Especificação Narrativa de UCs |
-| G03 | `grupo-03-diagrama-classes` | Diagrama de Classes do Domínio |
-| G04 | `grupo-04-diagramas-sequencia` | Diagramas de Sequência |
-| G05 | `grupo-05-modelagem-processos` | Modelagem de Processos (BPMN) |
-| G06 | `grupo-06-backlog` | Backlog: Épicos, Stories e Critérios de Aceite |
-| G07 | `grupo-07-adrs` | Decisões Arquiteturais (ADRs) |
-| G08 | `grupo-08-testes` | Plano e Casos de Teste |
-| G09 | `grupo-09-auditoria-compliance-bi` | Auditoria, Compliance e Indicadores |
+| G01 | `grupo-01-consolidacao-demandas` | Consolidação de Demandas (DFD) |
+| G02 | `grupo-02-estudo-tecnico-preliminar` | Estudo Técnico Preliminar (ETP) |
+| G03 | `grupo-03-atas-srp` | Pesquisa e Gestão de Atas SRP |
+| G04 | `grupo-04-termo-referencia` | Elaboração de Termo de Referência (TR) |
+| G05 | `grupo-05-mapa-riscos` | Mapa de Riscos |
+| G06 | `grupo-06-preparacao-edital` | Preparação para Edital e Envio à Prefeitura |
+| G07 | `grupo-07-acompanhamento-externo` | Acompanhamento de Processo Externo |
+| G08 | `grupo-08-ordem-fornecimento` | Controle de Ordem de Fornecimento (OF) |
+| G09 | `grupo-09-auditoria-compliance-bi` | Auditoria, Compliance e Indicadores de Negócio |
 
 ---
 
@@ -76,7 +76,7 @@ sistema-licitacao-facape/
 1. Fork deste repositório para a conta do grupo
 2. Clone o fork localmente
 3. Trabalhe APENAS dentro da pasta do seu grupo
-4. Commit e push com mensagens no padrão: [G0X] feat: descrição
+4. Commit e push com mensagens no padrão: `[G0X] feat: descrição`
 5. Abra um Pull Request apontando para este repositório (branch: main)
 6. Preencha o PULL_REQUEST_TEMPLATE obrigatoriamente
 7. Aguarde revisão e aprovação do professor

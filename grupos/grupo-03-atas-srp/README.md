@@ -1,8 +1,51 @@
-# Grupo 03 — Diagrama de Classes do Domínio
+# Grupo 03 — Pesquisa e Gestão de Atas SRP
 
-## 🎯 Responsabilidade
+## Módulo do Sistema
 
-Modelar o **diagrama de classes UML** do domínio do sistema, capturando as entidades, atributos, relacionamentos, multiplicidades e restrições identificadas no processo de licitações.
+Verificação de atas de SRP (Sistema de Registro de Preço) vigentes que podem ser reutilizadas (adesão/carona) em vez de abrir novo processo licitatório.
+
+## Responsabilidade
+
+- Receber ETP (G02)
+- Pesquisar atas de SRP vigentes que cobrem os itens solicitados
+- Comparar competitividade: preço da ata vs. cotação nova
+- Calcular viabilidade de adesão (limite de 50% do quantitativo da ata)
+- Gerar recomendação: adesão a ata existente ou novo processo
+
+**Entradas:** ETP (G02)  
+**Saídas:** Relatório de atas com recomendação de ação
+
+---
+
+## Entregas Mínimas
+
+| Artefato | Descrição |
+|----------|-----------|
+| Casos de uso (mínimo 4) | Pesquisar ata, validar competitividade, calcular limite de adesão, gerar relatório |
+| Diagrama UML de classes | `Ata`, `ProcessoLicitatorio`, `Adesao`, `Fornecedor`, `AnalisePrecoConcorrencia` |
+| Diagrama de sequência | Busca em base de atas, validação de elegibilidade |
+| BPMN | Fluxo: pesquisa → validação → decisão (adesão vs. novo processo) |
+| Backlog | Mínimo 5 histórias de usuário |
+| ADRs (mínimo 2) | Ex.: onde armazenar dados de atas? Local vs. Portal da Prefeitura? |
+| Testes | Cálculo correto de 50%, validação de vigência |
+| Auditoria | Quais atas foram consultadas, qual foi a decisão final |
+
+---
+
+## Interfaces com Outros Módulos
+
+- **Entrada ← G02 (ETP):** ETP
+- **Saída → G04 (TR):** Decisão de ata (adesão ou novo processo)
+
+---
+
+## Entrega do Grupo
+
+> Preencha esta seção ao finalizar:
+
+- **Integrantes:**
+- **Data de entrega:**
+- **Branch/PR:**
 
 ---
 

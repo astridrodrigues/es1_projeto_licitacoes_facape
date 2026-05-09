@@ -1,8 +1,54 @@
-# Grupo 04 — Diagramas de Sequência
+# Grupo 04 — Elaboração de Termo de Referência (TR)
 
-## 🎯 Responsabilidade
+## Módulo do Sistema
 
-Modelar os **diagramas de sequência UML** dos fluxos mais críticos do sistema, mostrando a interação temporal entre atores, objetos e sistemas externos.
+Compilação do ETP com as regras da Lei Complementar nº 123/2006 para geração do Termo de Referência (documento formal).
+
+## Responsabilidade
+
+- Receber ETP (G02) e decisão de ata (G03)
+- Aplicar regras da Lei 123/2006:
+  - Itens ≤ R$ 80k: exclusivo para ME/EPP
+  - Itens > R$ 80k: 25% exclusivo para ME/EPP, 75% para todos
+  - Empate ficto: ME/EPP tem vantagem de até 10% de diferença
+- Compilar TR com especificação, divisão de cotas, prazos e critérios de aceitação
+
+**Entradas:** ETP (G02), Decisão de Ata (G03)  
+**Saídas:** TR formatado e validado
+
+---
+
+## Entregas Mínimas
+
+| Artefato | Descrição |
+|----------|-----------|
+| Casos de uso (mínimo 4) | Compilar ETP em TR, calcular cotas, validar Lei 123, gerar TR |
+| Diagrama UML de classes | `TermoReferencia`, `CotaExclusiva`, `CotaAberta`, `RegrasLei123`, `Criterio` |
+| Diagrama de sequência | Compilação e validação de conformidade legal |
+| BPMN | Fluxo de TR com validações jurídicas obrigatórias |
+| Backlog | Mínimo 5 histórias de usuário |
+| ADRs (mínimo 2) | Ex.: qual versão da Lei 123 aplicar? Como lidar com atualizações? |
+| Testes | Cálculo correto de cotas, validação de percentuais |
+| Auditoria | Versão da Lei aplicada, quem validou, data de criação |
+
+---
+
+## Interfaces com Outros Módulos
+
+- **Entrada ← G02 (ETP):** ETP
+- **Entrada ← G03 (Atas SRP):** Decisão de ata
+- **Saída → G05 (Mapa de Riscos):** TR
+- **Saída → G06 (Edital):** TR
+
+---
+
+## Entrega do Grupo
+
+> Preencha esta seção ao finalizar:
+
+- **Integrantes:**
+- **Data de entrega:**
+- **Branch/PR:**
 
 ---
 

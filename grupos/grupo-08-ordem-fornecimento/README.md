@@ -1,8 +1,51 @@
-# Grupo 08 — Plano e Casos de Teste
+# Grupo 08 — Controle de Ordem de Fornecimento (OF)
 
-## 🎯 Responsabilidade
+## Módulo do Sistema
 
-Elaborar o **Plano de Testes** e os **Casos de Teste** do sistema, cobrindo os fluxos críticos identificados no contexto do domínio, com foco especial nas **regras de negócio** da lei de licitações.
+Geração da Ordem de Fornecimento após resultado do pregão e acompanhamento da entrega pelo fornecedor.
+
+## Responsabilidade
+
+- Receber resultado do pregão (G07): empresa vencedora, valor final
+- Gerar OF com número, itens, preços, local de entrega, prazo e condições de pagamento
+- Enviar OF ao fornecedor (assinada digitalmente)
+- Acompanhar confirmação de recebimento da OF
+- Acompanhar status de entrega
+
+**Entradas:** Resultado do pregão (G07)  
+**Saídas:** OF gerada e enviada ao fornecedor
+
+---
+
+## Entregas Mínimas
+
+| Artefato | Descrição |
+|----------|-----------|
+| Casos de uso (mínimo 4) | Gerar OF, validar, enviar ao fornecedor, acompanhar entrega |
+| Diagrama UML de classes | `OrdemFornecimento`, `ItemOF`, `Fornecedor`, `Entrega`, `Pagamento` |
+| Diagrama de sequência | Geração → envio → acompanhamento |
+| BPMN | Ciclo completo de OF |
+| Backlog | Mínimo 5 histórias de usuário |
+| ADRs (mínimo 2) | Ex.: assinatura digital? Qual padrão? |
+| Testes | Cálculo de totais, validação de prazos |
+| Auditoria | Quem gerou OF, quando foi enviada, confirmação de recebimento |
+
+---
+
+## Interfaces com Outros Módulos
+
+- **Entrada ← G07 (Acompanhamento Externo):** Resultado do pregão
+- **Saída → G09 (Auditoria):** Eventos de geração e envio da OF
+
+---
+
+## Entrega do Grupo
+
+> Preencha esta seção ao finalizar:
+
+- **Integrantes:**
+- **Data de entrega:**
+- **Branch/PR:**
 
 ---
 

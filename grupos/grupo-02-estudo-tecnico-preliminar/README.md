@@ -1,8 +1,51 @@
-# Grupo 02 — Especificação Narrativa de Casos de Uso
+# Grupo 02 — Estudo Técnico Preliminar (ETP)
 
-## 🎯 Responsabilidade
+## Módulo do Sistema
 
-Escrever as **especificações detalhadas** dos casos de uso mais críticos do sistema, em formato narrativo UML (fluxo principal, fluxos alternativos, fluxos de exceção, pré e pós-condições).
+Análise técnica do DFD: cotação de preços (via Banco de Preços), especificação refinada e análise de mercado.
+
+## Responsabilidade
+
+- Receber DFD consolidado (G01)
+- Consultar Banco de Preços para obter 3+ cotações por item
+- Refinar especificação técnica (normas, padrões, garantias)
+- Gerar ETP com recomendações de parcelamento
+
+**Entradas:** DFD (G01)  
+**Saídas:** ETP com cotações, especificação e análise de mercado
+
+---
+
+## Entregas Mínimas
+
+| Artefato | Descrição |
+|----------|-----------|
+| Casos de uso (mínimo 4) | Consultar Banco de Preços, fazer cotação, validar especificação, gerar ETP |
+| Diagrama UML de classes | `Cotacao`, `Fornecedor`, `Especificacao`, `AnaliseETP` |
+| Diagrama de sequência | Integração com Banco de Preços, análise de propostas |
+| BPMN | Fluxo de análise técnica com pontos de validação |
+| Backlog | Mínimo 5 histórias de usuário |
+| ADRs (mínimo 2) | Ex.: API vs. manual para Banco de Preços, critérios de seleção de fornecedores |
+| Testes | Validação de cotações, detecção de outliers de preço |
+| Auditoria | Quem fez cada cotação, critério de seleção |
+
+---
+
+## Interfaces com Outros Módulos
+
+- **Entrada ← G01 (DFD):** DFD consolidado
+- **Saída → G03 (Atas SRP):** ETP
+- **Saída → G04 (TR):** ETP
+
+---
+
+## Entrega do Grupo
+
+> Preencha esta seção ao finalizar:
+
+- **Integrantes:**
+- **Data de entrega:**
+- **Branch/PR:**
 
 ---
 

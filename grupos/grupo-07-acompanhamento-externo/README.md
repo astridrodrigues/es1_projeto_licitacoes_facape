@@ -1,8 +1,51 @@
-# Grupo 07 — Registros de Decisão Arquitetural (ADRs)
+# Grupo 07 — Acompanhamento de Processo Externo
 
-## 🎯 Responsabilidade
+## Módulo do Sistema
 
-Documentar as **principais decisões arquiteturais** do sistema usando o formato **MADR (Markdown Any Decision Record)**, justificando as escolhas técnicas com base nos requisitos funcionais, não-funcionais e nas restrições do domínio de licitações públicas.
+Acompanhamento do pregão eletrônico na plataforma da Prefeitura (sem implementar motor de lances — apenas leitura de status).
+
+## Responsabilidade
+
+- Receber edital enviado (G06)
+- Consultar plataforma da Prefeitura para obter status do pregão
+- Registrar datas de abertura, empresa vencedora, valor final
+- Atualizar status: aberto, em julgamento, adjudicado, fracassado, deserto
+- Gerar notificações de mudança de status
+
+**Entradas:** Edital enviado (G06), API da plataforma da Prefeitura  
+**Saídas:** Status atualizado, resultado do pregão (empresa vencedora, valores finais)
+
+---
+
+## Entregas Mínimas
+
+| Artefato | Descrição |
+|----------|-----------|
+| Casos de uso (mínimo 4) | Consultar status do pregão, receber resultado, validar vencedor, atualizar status |
+| Diagrama UML de classes | `ProcessoExterno`, `StatusPregao`, `EmpresaVencedora`, `ResultadoItem` |
+| Diagrama de sequência | Integração com API/plataforma da Prefeitura |
+| BPMN | Fluxo de acompanhamento com notificações |
+| Backlog | Mínimo 5 histórias de usuário |
+| ADRs (mínimo 2) | Ex.: API vs. polling? Webhooks? |
+| Testes | Validação de dados da plataforma, detecção de inconsistências |
+| Auditoria | Quando cada consulta foi feita, qual foi o resultado |
+
+---
+
+## Interfaces com Outros Módulos
+
+- **Entrada ← G06 (Edital):** Edital enviado
+- **Saída → G08 (OF):** Resultado do pregão (empresa vencedora, valor final)
+
+---
+
+## Entrega do Grupo
+
+> Preencha esta seção ao finalizar:
+
+- **Integrantes:**
+- **Data de entrega:**
+- **Branch/PR:**
 
 ---
 
