@@ -6,7 +6,6 @@
 - Maria Rita Rodrigues de Souza 28596
 - Rayssa Mel Nascimento de Carvalho 26338
 - Rayssa Rodrigues Sousa 26220
-
 ---
 
 ## 📋 Artefatos Entregues
