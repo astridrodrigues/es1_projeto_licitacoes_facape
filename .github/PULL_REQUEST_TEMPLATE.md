@@ -50,8 +50,8 @@ A segunda decisão relevante foi a adoção da Parametrização Dinâmica da Lei
 
 - [X] Todos os arquivos estão dentro de grupos/grupo-04-termo-de-referencia/
 - [X] Nenhum arquivo foi modificado fora da pasta do grupo
-- [ ] Exportações em imagem (PNG ou SVG) estão presentes
-- [ ] Fontes editoráveis estão presentes (.puml, .drawio, .bpmn, etc.)
+- [X] Exportações em imagem (PNG ou SVG) estão presentes
+- [X] Fontes editoráveis estão presentes (.puml, .drawio, .bpmn, etc.)
 - [X] O README.md do grupo está preenchido
 - [X] Os commits seguem o padrão [G04] tipo: descrição
 - [X] Todos os membros do grupo contribuíram com commits
